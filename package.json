@@ -1,0 +1,20 @@
+{
+  "name": "starter-tailwindcss",
+  "version": "1.0.0",
+  "description": "This project is intended to be a starter codebase for working with TailwindCSS and HTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "mkdir -p ./src && npx tailwindcss -o ./src/tailwind.css",
+    "build": "mkdir -p ./dist && cp ./src/index.html ./dist/index.html && purgecss --css ./src/tailwind.css --content ./src/index.html --output ./dist/style.css",
+    "build:minify": "mkdir -p ./dist && cp ./src/index.html ./dist/index.html && npx postcss ./src/tailwind.css > ./dist/style.css"
+  },
+  "author": "Abu Hurairah <eibu1812@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1"
+  }
+}
