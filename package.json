@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "init": "mkdir -p ./src && npx tailwindcss -o ./src/tailwind.css",
+    "init": "mkdir -p ./src && npx tailwindcss -o ./src/style.css",
     "build": "mkdir -p ./dist && cp ./src/index.html ./dist/index.html && purgecss --css ./src/tailwind.css --content ./src/index.html --output ./dist/style.css",
     "build:minify": "mkdir -p ./dist && cp ./src/index.html ./dist/index.html && npx postcss ./src/tailwind.css > ./dist/style.css"
   },
