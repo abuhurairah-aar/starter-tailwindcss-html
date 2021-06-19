@@ -1,5 +1,5 @@
 {
-  "name": "starter-tailwindcss",
+  "name": "starter-tailwindcss-html",
   "version": "1.0.0",
   "description": "This project is intended to be a starter codebase for working with TailwindCSS and HTML.",
   "main": "index.js",
